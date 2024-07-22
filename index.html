@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog ESGIS</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">ESGIS <span>Blog</span></a>
+            <a href="#" class="login">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Bienvenue sur le Blog ESGIS</h2>
+            <span class="home-subtitle">Explorez les actualités et les événements de l'ESGIS</span>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Découvrez les Dernières Nouvelles</h2>
+            <p class="title-text">
+                Bienvenue sur notre blog ! Ici, nous partageons les dernières nouvelles et événements de l'ESGIS, ainsi que des articles intéressants sur nos programmes académiques et nos activités scolaires.
+            </p>
+            <a href="#" class="btn2">Lire la suite</a>
+        </div>
+        <div class="imgBx">
+            <img src="images/about.png" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">Tous</span>
+        <span class="filter-item" data-filter="tech">Technologie</span>
+        <span class="filter-item" data-filter="food">Alimentation</span>
+        <span class="filter-item" data-filter="news">Actualités</span>
+    </div>
+    
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box tech">
+            <img src="images/img1.jpg" alt="" class="post-img">
+            <h2 class="category">Technologie</h2>
+            <a href="#" class="post-title">Introduction aux Dernières Technologies : [Titre de l'Article]</a>
+            <span class="post-date">[Date de Publication]</span>
+            <p class="post-description">Découvrez les dernières avancées en [Tech/Programme] à l'ESGIS, avec un focus sur [sujet spécifique].</p>
+            <div class="profile">
+                <img src="images/testi1.jpg" alt="" class="profile-img">
+                <span class="profile-name">ESGIS</span>
+            </div>
+        </div>
+        <!-- Répéter pour les autres posts -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>À propos de nous</h2>
+                <p>Le Blog ESGIS est dédié à fournir les dernières informations et actualités concernant notre école. Restez informé sur nos événements, actualités et réalisations académiques.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Liens Rapides</h2>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Informations de Contact</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>[Adresse de l'école]</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope'></i></span>
+                        <p><a href="mailto:[Email de contact de l'ESGIS]">[Email de contact de l'ESGIS]</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
