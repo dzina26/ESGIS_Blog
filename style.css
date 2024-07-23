@@ -564,5 +564,43 @@ footer p{
     }
 }
 
+/* Define the typewriter effect */
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
 
+/* Define the blink effect for cursor */
+@keyframes blink {
+    0% { border-right: 2px solid transparent; }
+    100% { border-right: 2px solid black; }
+}
+
+/* Apply typewriter effect to the subtitle */
+.home-subtitle {
+    display: inline-block; /* Ensure subtitle is inline-block for width animation */
+    overflow: hidden; /* Hide the text that overflows */
+    white-space: nowrap; /* Keep the text on one line */
+    border-right: 2px solid black; /* Cursor effect */
+    animation: 
+        typewriter 4s steps(30, end) 1s 1 normal both, 
+        blink 500ms steps(30, end) infinite;
+}
+
+
+.post-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.post-title:hover {
+    color: var(--second-color);
+    text-decoration: underline;
+}
 
