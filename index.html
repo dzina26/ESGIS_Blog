@@ -133,42 +133,101 @@
         <!-- Répéter pour les autres posts -->
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="sec aboutus">
-                <h2>À propos de nous</h2>
-                <p>Le Blog ESGIS est dédié à fournir les dernières informations et actualités concernant notre école.</p>
-                <ul class="sci">
-                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                </ul>
+    <!-- Contact Section -->
+    <section class="contact container" id="contact">
+        <h2 class="titleText">Contactez-nous</h2>
+        <form action="mailto:esgis.togo@esgis.org" method="post" enctype="text/plain">
+            <div class="inputBox">
+                <input type="text" name="name" required>
+                <span>Nom</span>
             </div>
-            <div class="sec quicklinks">
-                <h2>Liens Rapides</h2>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À propos</a></li>
-                </ul>
+            <div class="inputBox">
+                <input type="email" name="email" required>
+                <span>Email</span>
             </div>
-            <div class="sec contactBx">
-                <h2>Informations de Contact</h2>
-                <ul class="info">
-                    <li>
-                        <span><i class='bx bxs-map'></i></span>
-                        <span>Boulevard du 30 Aout Lomé, Adidogomé</span>
-                    </li>
-                    <li>
-                        <span><i class='bx bx-envelope'></i></span>
-                        <p><a href="mailto:esgis.togo@esgis.org">esgis.togo@esgis.org</a></p>
-                    </li>
-                </ul>
+            <div class="inputBox">
+                <textarea name="message" required></textarea>
+                <span>Message</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials container" id="testimonials">
+        <h2 class="titleText">Témoignages</h2>
+        <div class="testimonial-box">
+            <p>Le programme académique de l'ESGIS m'a permis d'acquérir des compétences inestimables qui m'ont aidé à réussir dans ma carrière.</p>
+            <div class="profile">
+                <img src="testi2.jpg" alt="Profile Picture">
+                <span class="profile-name">Jean Dupont</span>
             </div>
         </div>
-    </footer>
+        <div class="testimonial-box">
+            <p>L'ESGIS offre un environnement d'apprentissage stimulant et de nombreuses opportunités d'engagement pour les étudiants.</p>
+            <div class="profile">
+                <img src="testi3.jpg" alt="Profile Picture">
+                <span class="profile-name">Marie Claire</span>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Carousel Section -->
+<section class="carousel container" id="carousel">
+    <h2 class="titleText">Galerie</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel-images">
+            <img src="event1.jpg" alt="Event 1">
+            <img src="event2.jpg" alt="Event 2">
+            <img src="event3.jpg" alt="Event 3">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Social Media Section -->
+    <section class="social-media container" id="social-media">
+        <h2 class="titleText">Suivez-nous</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ESGIS" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/ESGIS" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.twitter.com/ESGIS" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.linkedin.com/ESGIS" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq container" id="faq">
+        <h2 class="titleText">FAQ</h2>
+        <div class="faq-box">
+            <h3>Comment puis-je m'inscrire à l'ESGIS ?</h3>
+            <p>Vous pouvez vous inscrire en ligne sur notre site web ou visiter notre campus pour obtenir de l'aide.</p>
+        </div>
+        <div class="faq-box">
+            <h3>Quels programmes académiques proposez-vous ?</h3>
+            <p>Nous offrons une variété de programmes dans les domaines de la gestion, de l'informatique et des sciences.</p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map container" id="map">
+        <h2 class="titleText">Nous Trouver</h2>
+        <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter container" id="newsletter">
+        <h2 class="titleText">Abonnez-vous à notre Newsletter</h2>
+        <form action="YOUR_NEWSLETTER_SIGNUP_URL" method="post">
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="submit" value="S'abonner">
+        </form>
+    </section>
+
     <script src="main.js"></script>
 </body>
 </html>
