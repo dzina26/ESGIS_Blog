@@ -24,3 +24,17 @@ $(document).ready(function () {
         $(this).addClass("active-filter").siblings().removeClass("active-filter")
     });
 });
+function shareArticle(title, url) {
+    if (navigator.share) {
+        navigator.share({
+            title: title,
+            url: url
+        }).then(() => {
+            console.log('Article partagé avec succès.');
+        }).catch((error) => {
+            console.log('Erreur lors du partage de l\'article:', error);
+        });
+    } else {
+        alert('Le partage web n\'est pas pris en charge par votre navigateur.');
+    }
+}
