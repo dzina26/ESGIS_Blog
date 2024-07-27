@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog ESGIS</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="nav container">
             <a href="#" class="logo">ESGIS <span>Blog</span></a>
-            <a href="#" class="login">Sign up</a>
+            
         </div>
     </header>
 
@@ -37,7 +38,7 @@
             <a href="#" class="btn2">Lire la suite</a>
         </div>
         <div class="imgBx">
-            <img src="banner2.png" alt="" class="fitBg">
+            <img src="about.png" alt="" class="fitBg">
         </div>
     </section>
 
@@ -132,7 +133,6 @@
         
         <!-- Répéter pour les autres posts -->
     </div>
-
     <!-- Contact Section -->
     <section class="contact container" id="contact">
         <h2 class="titleText">Contactez-nous</h2>
@@ -162,14 +162,14 @@
             <p>Le programme académique de l'ESGIS m'a permis d'acquérir des compétences inestimables qui m'ont aidé à réussir dans ma carrière.</p>
             <div class="profile">
                 <img src="testi2.jpg" alt="Profile Picture">
-                <span class="profile-name">Jean Dupont</span>
+                <span class="profile-name">Etienne DZINAKU</span>
             </div>
         </div>
         <div class="testimonial-box">
             <p>L'ESGIS offre un environnement d'apprentissage stimulant et de nombreuses opportunités d'engagement pour les étudiants.</p>
             <div class="profile">
                 <img src="testi3.jpg" alt="Profile Picture">
-                <span class="profile-name">Marie Claire</span>
+                <span class="profile-name">Bernice AGBOBLI</span>
             </div>
         </div>
     </section>
@@ -178,13 +178,20 @@
 <section class="carousel container" id="carousel">
     <h2 class="titleText">Galerie</h2>
     <div class="carousel-wrapper">
+        <button class="carousel-control left" onclick="scrollCarousel(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
         <div class="carousel-images">
             <img src="event1.jpg" alt="Event 1">
             <img src="event2.jpg" alt="Event 2">
             <img src="event3.jpg" alt="Event 3">
         </div>
+        <button class="carousel-control right" onclick="scrollCarousel(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
     </div>
 </section>
+
 
 
     <!-- Social Media Section -->
@@ -215,7 +222,7 @@
     <section class="map container" id="map">
         <h2 class="titleText">Nous Trouver</h2>
         <div class="map-box">
-            <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://maps.google.com/maps?q=ESGIS%20Adidogome&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
@@ -228,6 +235,43 @@
         </form>
     </section>
 
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>À propos de nous</h2>
+                <p>Le Blog ESGIS est dédié à fournir les dernières informations et actualités concernant notre école.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Liens Rapides</h2>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Informations de Contact</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>Boulevard du 30 Aout Lomé, Adidogomé</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope'></i></span>
+                        <p><a href="mailto:esgis.togo@esgis.org">esgis.togo@esgis.org</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>
 </html>
